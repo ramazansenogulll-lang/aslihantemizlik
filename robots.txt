@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aslihantemizlik.com.tr/sitemap.xml
