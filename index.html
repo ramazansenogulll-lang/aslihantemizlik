@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WRZWG8TN');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18571577384"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18571577384');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aslıhan Temizlik | Aydın Efeler Ev, Ofis ve Koltuk Temizliği</title>
 <meta name="description" content="Aslıhan Temizlik, Aydın Efeler'de ev temizliği, boş ev ve inşaat sonrası temizlik, cam temizliği, koltuk yıkama ve işyeri temizliği yapar. Fiyat için WhatsApp'tan yazın: 0551 890 67 27.">
@@ -375,7 +377,9 @@ footer{padding:36px 0 110px;color:var(--muted);font-size:.9rem;text-align:center
 
 <script>
 window.dataLayer=window.dataLayer||[];
-document.addEventListener('click',function(e){var a=e.target.closest('[data-track]');if(a)dataLayer.push({event:a.dataset.track==='arama'?'arama_tiklama':'whatsapp_tiklama'});});
+document.addEventListener('click',function(e){var a=e.target.closest('[data-track]');if(!a)return;var tel=a.dataset.track==='arama';
+dataLayer.push({event:tel?'arama_tiklama':'whatsapp_tiklama'});
+if(typeof gtag==='function')gtag('event','conversion',{send_to:tel?'AW-18571577384/EcaVCKbqlbcdEKiQz5dF':'AW-18571577384/TaQFCKnqlbcdEKiQz5dF',transport_type:'beacon'});});
 </script>
 </body>
 </html>
